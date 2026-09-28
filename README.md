@@ -17,7 +17,7 @@ Aggregate metrics, explanations, plots and data-quality checks are in `results/`
 
 ## Current technology
 
-The published experiment was trained on a **local Windows computer using CPU compute**, and the Streamlit results app runs locally.
+The published experiment used **local server CPU compute**, and the Streamlit results app runs on a local server.
 
 | Component | Technology used |
 |---|---|

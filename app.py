@@ -35,9 +35,9 @@ if page == 'Overview':
         st.info('Ranking improves over logistic regression, but predicted event rates are substantially too low. Calibration and a fresh evaluation cohort are required.')
 
     st.subheader('Current technology')
-    st.caption('Technology used for the published experiment and this local results app.')
+    st.caption('Technology used for the published experiment and results app on the local server.')
     st.dataframe(pd.DataFrame([
-        {'Component': 'Compute', 'Technology used': 'Local Windows computer; CPU training'},
+        {'Component': 'Compute', 'Technology used': 'Local server; CPU training'},
         {'Component': 'Language and data processing', 'Technology used': 'Python, pandas, NumPy'},
         {'Component': 'Machine learning', 'Technology used': 'scikit-learn (logistic regression), XGBoost (boosted trees)'},
         {'Component': 'Model explanations', 'Technology used': 'TreeSHAP contributions calculated by XGBoost'},
@@ -45,7 +45,7 @@ if page == 'Overview':
         {'Component': 'Code and automated checks', 'Technology used': 'GitHub, GitHub Actions, Python unittest'},
         {'Component': 'Storage', 'Technology used': 'Local CSV and model files; aggregate results in GitHub'},
     ]), hide_index=True, width='stretch')
-    st.caption('Google Cloud and AWS were not used. NVIDIA GPUs / CUDA were not used. The app is hosted locally; GitHub hosts the code and runs automated checks.')
+    st.caption('Google Cloud and AWS were not used. NVIDIA GPUs / CUDA were not used. The app is hosted on a local server; GitHub hosts the code and runs automated checks.')
 
 elif page == 'SBA model results':
     if not metrics:
