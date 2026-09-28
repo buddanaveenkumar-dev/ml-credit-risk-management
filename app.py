@@ -15,7 +15,7 @@ def load_json(relative):
 st.title('ML in Credit Risk Management')
 st.caption('US public data • Reproducible experiments • Evidence before decisions')
 st.warning('Research prototype. These results do not establish regulatory compliance or support live credit approvals.')
-page = st.radio('Explore', ['Overview', 'SBA model results', 'Mortgage data', 'Methods & limitations'], horizontal=True)
+page = st.radio('Explore', ['Overview', 'SBA model results', 'Mortgage data', 'Cloud & GPU options', 'Methods & limitations'], horizontal=True)
 metrics = load_json('results/sba/metrics.json')
 audits = load_json('results/source_audits.json')
 
@@ -79,6 +79,9 @@ elif page == 'Mortgage data':
     st.link_button('Freddie Mac loan-level data', 'https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset')
     st.link_button('Fannie Mae loan performance', 'https://capitalmarkets.fanniemae.com/credit-risk-transfer/single-family-credit-risk-transfer/fannie-mae-single-family-loan-performance-data')
     st.link_button('HMDA data browser', 'https://ffiec.cfpb.gov/data-browser/')
+
+elif page == 'Cloud & GPU options':
+    st.markdown((ROOT/'docs/deployment-options.md').read_text(encoding='utf-8'))
 
 else:
     st.header('What this project establishes')

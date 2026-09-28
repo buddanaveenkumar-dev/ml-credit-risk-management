@@ -30,6 +30,10 @@ The published experiment used **local server CPU compute**, and the Streamlit re
 
 **Google Cloud, AWS, and NVIDIA GPU / CUDA acceleration were not used.** GitHub hosts the code and runs automated checks; it does not host the interactive app or train the published models. Raw loan files and saved models remain local and are excluded from the repository.
 
+## Build on AWS, GCP or NVIDIA GPUs
+
+The [deployment options guide](docs/deployment-options.md) maps server setup, storage, training, hosting and operational tools for AWS, Google Cloud and NVIDIA GPU infrastructure. It includes build steps and the code adaptations still needed. The same guide appears under **Cloud & GPU options** in the app. These are proposed options; no cloud deployment or GPU benchmark has been performed.
+
 ## Run
 
 Use Python 3.12 or later in a virtual environment:

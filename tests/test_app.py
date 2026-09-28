@@ -6,7 +6,7 @@ class ResultsViewerTests(unittest.TestCase):
     def test_all_views_render(self):
         app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py')).run(timeout=30)
         self.assertEqual(len(app.exception), 0)
-        for page in ['SBA model results', 'Mortgage data', 'Methods & limitations']:
+        for page in ['SBA model results', 'Mortgage data', 'Cloud & GPU options', 'Methods & limitations']:
             app.radio[0].set_value(page).run(timeout=30)
             self.assertEqual(len(app.exception), 0, page)
 
