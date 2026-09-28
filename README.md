@@ -15,6 +15,21 @@ SBA exploratory evaluation: logistic regression ROC AUC **0.711**, boosted trees
 
 Aggregate metrics, explanations, plots and data-quality checks are in `results/`. Raw data and saved models are excluded from Git.
 
+## Current technology
+
+The published experiment was trained on a **local Windows computer using CPU compute**, and the Streamlit results app runs locally.
+
+| Component | Technology used |
+|---|---|
+| Language and data processing | Python, pandas, NumPy |
+| Machine learning | scikit-learn logistic regression; XGBoost boosted trees |
+| Model explanations | TreeSHAP contributions calculated by XGBoost |
+| Results and charts | Streamlit, Matplotlib |
+| Code hosting and automated checks | GitHub, GitHub Actions, Python unittest |
+| Storage | Local CSV and model files; aggregate results committed to GitHub |
+
+**Google Cloud, AWS, and NVIDIA GPU / CUDA acceleration were not used.** GitHub hosts the code and runs automated checks; it does not host the interactive app or train the published models. Raw loan files and saved models remain local and are excluded from the repository.
+
 ## Run
 
 Use Python 3.12 or later in a virtual environment:

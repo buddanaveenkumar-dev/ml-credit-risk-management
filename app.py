@@ -34,6 +34,19 @@ if page == 'Overview':
             st.metric('Boosted-tree ROC AUC', f"{metrics['metrics']['Boosted trees']['roc_auc']:.3f}", border=True)
         st.info('Ranking improves over logistic regression, but predicted event rates are substantially too low. Calibration and a fresh evaluation cohort are required.')
 
+    st.subheader('Current technology')
+    st.caption('Technology used for the published experiment and this local results app.')
+    st.dataframe(pd.DataFrame([
+        {'Component': 'Compute', 'Technology used': 'Local Windows computer; CPU training'},
+        {'Component': 'Language and data processing', 'Technology used': 'Python, pandas, NumPy'},
+        {'Component': 'Machine learning', 'Technology used': 'scikit-learn (logistic regression), XGBoost (boosted trees)'},
+        {'Component': 'Model explanations', 'Technology used': 'TreeSHAP contributions calculated by XGBoost'},
+        {'Component': 'Results and charts', 'Technology used': 'Streamlit, Matplotlib'},
+        {'Component': 'Code and automated checks', 'Technology used': 'GitHub, GitHub Actions, Python unittest'},
+        {'Component': 'Storage', 'Technology used': 'Local CSV and model files; aggregate results in GitHub'},
+    ]), hide_index=True, width='stretch')
+    st.caption('Google Cloud and AWS were not used. NVIDIA GPUs / CUDA were not used. The app is hosted locally; GitHub hosts the code and runs automated checks.')
+
 elif page == 'SBA model results':
     if not metrics:
         st.info('Run scripts/run_sba.py to generate results.')
