@@ -1,0 +1,45 @@
+{
+  "freddie": {
+    "dataset": "Freddie Mac",
+    "status": "format_sample_only",
+    "origination_rows": 1000,
+    "performance_rows": 1011,
+    "origination_loans": 1000,
+    "performance_loans": 12,
+    "matched_loans": 0,
+    "origination_columns": 31,
+    "performance_columns": 35,
+    "models_trained": 0,
+    "reason": "Official format samples are not a representative training cohort. No loan IDs match across the files."
+  },
+  "fannie": {
+    "dataset": "Fannie Mae",
+    "status": "format_sample_only",
+    "performance_rows": 757,
+    "loans": 8,
+    "columns": 108,
+    "first_report": "2009-07",
+    "last_report": "2020-06",
+    "models_trained": 0,
+    "reason": "Only a format sample; too few independent loans for credible model evaluation."
+  },
+  "hmda": {
+    "status": "download_blocked",
+    "models_trained": 0,
+    "reason": "Official downloads returned HTTP 403 in this environment. Run the download script or import an official CSV locally.",
+    "attempts": [
+      {
+        "dataset": "hmda_MD_2025",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "dataset": "hmda_MD_2023",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "dataset": "hmda_MD_2024",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+[
+  {
+    "state": "AL",
+    "n": 405,
+    "events": 2,
+    "observed_rate": 0.0049382716049382715,
+    "mean_prediction": 0.002469079103320837
+  },
+  {
+    "state": "AR",
+    "n": 240,
+    "events": 1,
+    "observed_rate": 0.004166666666666667,
+    "mean_prediction": 0.002570526208728552
+  },
+  {
+    "state": "AZ",
+    "n": 1102,
+    "events": 12,
+    "observed_rate": 0.010889292196007259,
+    "mean_prediction": 0.0022798606660217047
+  },
+  {
+    "state": "CA",
+    "n": 6529,
+    "events": 92,
+    "observed_rate": 0.014090978710369122,
+    "mean_prediction": 0.0023437333293259144
+  },
+  {
+    "state": "CO",
+    "n": 1438,
+    "events": 9,
+    "observed_rate": 0.006258692628650904,
+    "mean_prediction": 0.0024208235554397106
+  },
+  {
+    "state": "CT",
+    "n": 777,
+    "events": 7,
+    "observed_rate": 0.009009009009009009,
+    "mean_prediction": 0.002946023363620043
+  },
+  {
+    "state": "FL",
+    "n": 4736,
+    "events": 44,
+    "observed_rate": 0.009290540540540541,
+    "mean_prediction": 0.0027280068024992943
+  },
+  {
+    "state": "GA",
+    "n": 1654,
+    "events": 15,
+    "observed_rate": 0.009068923821039904,
+    "mean_prediction": 0.002234779531136155
+  },
+  {
+    "state": "IA",
+    "n": 351,
+    "events": 3,
+    "observed_rate": 0.008547008547008548,
+    "mean_prediction": 0.0034319281112402678
+  },
+  {
+    "state": "ID",
+    "n": 521,
+    "events": 5,
+    "observed_rate": 0.009596928982725527,
+    "mean_prediction": 0.003286604769527912
+  },
+  {
+    "state": "IL",
+    "n": 1948,
+    "events": 22,
+    "observed_rate": 0.011293634496919919,
+    "mean_prediction": 0.002335124649107456
+  },
+  {
+    "state": "IN",
+    "n": 1094,
+    "events": 3,
+    "observed_rate": 0.002742230347349177,
+    "mean_prediction": 0.0025081438943743706
+  },
+  {
+    "state": "KS",
+    "n": 393,
+    "events": 3,
+    "observed_rate": 0.007633587786259542,
+    "mean_prediction": 0.002430802443996072
+  },
+  {
+    "state": "KY",
+    "n": 457,
+    "events": 4,
+    "observed_rate": 0.0087527352297593,
+    "mean_prediction": 0.0023501215036958456
+  },
+  {
+    "state": "LA",
+    "n": 463,
+    "events": 7,
+    "observed_rate": 0.01511879049676026,
+    "mean_prediction": 0.001902781892567873
+  },
+  {
+    "state": "MA",
+    "n": 1519,
+    "events": 11,
+    "observed_rate": 0.007241606319947334,
+    "mean_prediction": 0.002822772366926074
+  },
+  {
+    "state": "MD",
+    "n": 1011,
+    "events": 4,
+    "observed_rate": 0.003956478733926805,
+    "mean_prediction": 0.002970332046970725
+  },
+  {
+    "state": "ME",
+    "n": 336,
+    "events": 1,
+    "observed_rate": 0.002976190476190476,
+    "mean_prediction": 0.0035888843704015017
+  },
+  {
+    "state": "MI",
+    "n": 2314,
+    "events": 5,
+    "observed_rate": 0.00216076058772688,
+    "mean_prediction": 0.002709933090955019
+  },
+  {
+    "state": "MN",
+    "n": 1356,
+    "events": 4,
+    "observed_rate": 0.0029498525073746312,
+    "mean_prediction": 0.002490110695362091
+  },
+  {
+    "state": "MO",
+    "n": 878,
+    "events": 8,
+    "observed_rate": 0.009111617312072893,
+    "mean_prediction": 0.0022602493409067392
+  },
+  {
+    "state": "MS",
+    "n": 303,
+    "events": 1,
+    "observed_rate": 0.0033003300330033004,
+    "mean_prediction": 0.002710063708946109
+  },
+  {
+    "state": "NC",
+    "n": 1302,
+    "events": 9,
+    "observed_rate": 0.0069124423963133645,
+    "mean_prediction": 0.002605004934594035
+  },
+  {
+    "state": "NE",
+    "n": 302,
+    "events": 0,
+    "observed_rate": 0.0,
+    "mean_prediction": 0.002406725427135825
+  },
+  {
+    "state": "NH",
+    "n": 469,
+    "events": 4,
+    "observed_rate": 0.008528784648187633,
+    "mean_prediction": 0.0036778333596885204
+  },
+  {
+    "state": "NJ",
+    "n": 2009,
+    "events": 24,
+    "observed_rate": 0.011946241911398706,
+    "mean_prediction": 0.003296609502285719
+  },
+  {
+    "state": "NM",
+    "n": 216,
+    "events": 1,
+    "observed_rate": 0.004629629629629629,
+    "mean_prediction": 0.0032635426614433527
+  },
+  {
+    "state": "NV",
+    "n": 596,
+    "events": 4,
+    "observed_rate": 0.006711409395973154,
+    "mean_prediction": 0.002995086368173361
+  },
+  {
+    "state": "NY",
+    "n": 3791,
+    "events": 55,
+    "observed_rate": 0.014508045370614614,
+    "mean_prediction": 0.0033864006400108337
+  },
+  {
+    "state": "OH",
+    "n": 3297,
+    "events": 14,
+    "observed_rate": 0.004246284501061571,
+    "mean_prediction": 0.0032217514235526323
+  },
+  {
+    "state": "OK",
+    "n": 391,
+    "events": 1,
+    "observed_rate": 0.0025575447570332483,
+    "mean_prediction": 0.0017750165425240993
+  },
+  {
+    "state": "OR",
+    "n": 801,
+    "events": 5,
+    "observed_rate": 0.006242197253433208,
+    "mean_prediction": 0.002997523872181773
+  },
+  {
+    "state": "PA",
+    "n": 2020,
+    "events": 9,
+    "observed_rate": 0.004455445544554455,
+    "mean_prediction": 0.003206141060218215
+  },
+  {
+    "state": "PR",
+    "n": 522,
+    "events": 0,
+    "observed_rate": 0.0,
+    "mean_prediction": 0.0034094920847564936
+  },
+  {
+    "state": "SC",
+    "n": 680,
+    "events": 5,
+    "observed_rate": 0.007352941176470588,
+    "mean_prediction": 0.003234882839024067
+  },
+  {
+    "state": "TN",
+    "n": 679,
+    "events": 1,
+    "observed_rate": 0.0014727540500736377,
+    "mean_prediction": 0.002389386994764209
+  },
+  {
+    "state": "TX",
+    "n": 4299,
+    "events": 20,
+    "observed_rate": 0.0046522447080716445,
+    "mean_prediction": 0.0022115474566817284
+  },
+  {
+    "state": "UT",
+    "n": 923,
+    "events": 7,
+    "observed_rate": 0.007583965330444204,
+    "mean_prediction": 0.0022721157874912024
+  },
+  {
+    "state": "VA",
+    "n": 977,
+    "events": 8,
+    "observed_rate": 0.008188331627430911,
+    "mean_prediction": 0.0025485935620963573
+  },
+  {
+    "state": "WA",
+    "n": 1507,
+    "events": 11,
+    "observed_rate": 0.0072992700729927005,
+    "mean_prediction": 0.002149516949430108
+  },
+  {
+    "state": "WI",
+    "n": 889,
+    "events": 9,
+    "observed_rate": 0.010123734533183352,
+    "mean_prediction": 0.002311332616955042
+  }
+]

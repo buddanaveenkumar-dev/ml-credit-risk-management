@@ -1,0 +1,134 @@
+{
+  "source_url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2020_Present_asof_260630.csv",
+  "source_asof": "2026-06-30",
+  "source_rows": 388338,
+  "sha256": "6c1e9132b5141a19f82bdc8ccafb86c9a01662461cad41ddb36a3cf409d8a4fe",
+  "target": "Recorded SBA charge-off within 24 months of approval; not all defaults or delinquency",
+  "train": {
+    "rows": 64697,
+    "events": 138,
+    "rate": 0.0021330200782107363,
+    "approval_start": "2019-10-01",
+    "approval_end": "2021-06-30"
+  },
+  "test": {
+    "rows": 57086,
+    "events": 467,
+    "rate": 0.008180639736537855,
+    "approval_start": "2023-07-01",
+    "approval_end": "2024-06-30"
+  },
+  "exclusions": {
+    "missing_chargeoff_date": 5,
+    "invalid_chargeoff_date": 22,
+    "invalid_disbursement_date": 0,
+    "test_borrower_overlap": 420
+  },
+  "loan_status_counts": {
+    "EXEMPT": 242061,
+    "P I F": 68201,
+    "CANCLD": 50104,
+    "COMMIT": 21079,
+    "CHGOFF": 6893
+  },
+  "features": [
+    "LogApprovalAmount",
+    "GuaranteeShare",
+    "LogJobsSupported",
+    "BusinessAge",
+    "BusinessType",
+    "IndustrySector",
+    "RevolverStatus",
+    "ProcessingMethod"
+  ],
+  "missing_numeric_training": {
+    "LogApprovalAmount": 0.0,
+    "GuaranteeShare": 0.0,
+    "LogJobsSupported": 0.0
+  },
+  "metrics": {
+    "Logistic regression": {
+      "roc_auc": 0.711290649967193,
+      "average_precision": 0.0159500718346694,
+      "brier": 0.008126239465380094,
+      "log_loss": 0.04947773320042546,
+      "mean_prediction": 0.0025210213306153624,
+      "observed_rate": 0.008180639736537855,
+      "top_decile_precision": 0.016640392362935717,
+      "top_decile_recall": 0.20342612419700215,
+      "top_decile_lift": 2.0341187118427158,
+      "roc_auc_ci95": [
+        0.6913713102017571,
+        0.7281641865813878
+      ]
+    },
+    "Boosted trees": {
+      "roc_auc": 0.7411886045623035,
+      "average_precision": 0.021766540613852362,
+      "brier": 0.008104235865175724,
+      "log_loss": 0.048796266317367554,
+      "mean_prediction": 0.0026963429991155863,
+      "observed_rate": 0.008180639736537855,
+      "top_decile_precision": 0.022771063233490978,
+      "top_decile_recall": 0.278372591006424,
+      "top_decile_lift": 2.7835308688374005,
+      "roc_auc_ci95": [
+        0.7229698952135168,
+        0.7591867366031239
+      ]
+    },
+    "Training prevalence baseline": {
+      "brier": 0.008150290573570617,
+      "log_loss": 0.052430534986449215,
+      "mean_prediction": 0.0021330200782107363,
+      "observed_rate": 0.008180639736537855
+    }
+  },
+  "auc_difference_ci95": [
+    0.017613221976595674,
+    0.04288981130289631
+  ],
+  "shap_sample": 4000,
+  "shap_additivity_max_error": 8.58306884765625e-06,
+  "shap_importance": [
+    {
+      "feature": "LogApprovalAmount",
+      "mean_absolute_log_odds_contribution": 1.0716087818145752
+    },
+    {
+      "feature": "BusinessAge",
+      "mean_absolute_log_odds_contribution": 0.2511952519416809
+    },
+    {
+      "feature": "LogJobsSupported",
+      "mean_absolute_log_odds_contribution": 0.18660104274749756
+    },
+    {
+      "feature": "ProcessingMethod",
+      "mean_absolute_log_odds_contribution": 0.13871261477470398
+    },
+    {
+      "feature": "GuaranteeShare",
+      "mean_absolute_log_odds_contribution": 0.08192164450883865
+    },
+    {
+      "feature": "IndustrySector",
+      "mean_absolute_log_odds_contribution": 0.07950000464916229
+    },
+    {
+      "feature": "RevolverStatus",
+      "mean_absolute_log_odds_contribution": 0.012533985078334808
+    },
+    {
+      "feature": "BusinessType",
+      "mean_absolute_log_odds_contribution": 0.003465415444225073
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "numpy": "2.5.3",
+    "sklearn": "1.9.1",
+    "xgboost": "3.4.1"
+  }
+}
