@@ -32,7 +32,7 @@ The published experiment used **local server CPU compute**, and the Streamlit re
 
 ## Build on AWS, GCP or NVIDIA GPUs
 
-The [deployment options guide](docs/deployment-options.md) maps server setup, storage, training, hosting and operational tools for AWS, Google Cloud and NVIDIA GPU infrastructure. It includes build steps and the code adaptations still needed. The same guide appears under **Cloud & GPU options** in the app. These are proposed options; no cloud deployment or GPU benchmark has been performed.
+The [deployment options guide](docs/deployment-options.md) shows anyone wishing to run this project on AWS, Google Cloud or NVIDIA GPU infrastructure the tools required, setup steps and adaptations they would need to make. This is informational guidance only; we do not develop, provision or deploy these environments as part of this project. Check current costs directly with the chosen provider before starting. The same guide appears under **Cloud & GPU options** in the app. No cloud deployment or GPU benchmark has been performed.
 
 ## Run
 

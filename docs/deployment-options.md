@@ -1,6 +1,10 @@
-# Build on AWS, Google Cloud or NVIDIA GPUs
+# How to run this project on AWS, Google Cloud or NVIDIA GPUs
 
-**Planning guide — these options have not been deployed or benchmarked.** Published results still come from local server CPU training. NVIDIA provides GPU hardware and software that can run on a local server, AWS or Google Cloud; it is not a mutually exclusive cloud choice.
+**Informational guide for anyone who wants to run this project in these environments.** The sections below show the tools required and the setup steps to follow. We provide guidance only; we do not develop, provision or deploy these environments as part of this project. These options have not been deployed or benchmarked. Published results still come from local server CPU training. NVIDIA provides GPU hardware and software that can run on a local server, AWS or Google Cloud; it is not a mutually exclusive cloud choice.
+
+## Costs — check with the provider
+
+This guide does not quote prices or estimate a total cost. Before starting, check current pricing directly with your chosen provider: [AWS Pricing Calculator](https://calculator.aws/), [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator), or your NVIDIA GPU hardware, hosting or software supplier. Costs depend on region, server/GPU type, runtime, storage, data transfer and any software or support subscriptions. Set a budget and review charges for resources left running or retained after use. NVIDIA tooling may have different licensing terms; check the specific product with its provider.
 
 ## AWS server and tools
 
